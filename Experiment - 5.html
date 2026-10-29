@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration</title>
+    <style>
+        form{
+            border: 1px solid black;
+            width: 300px;
+            height: 400px;
+            
+            padding: 0px auto;
+            margin-left: 40%;
+        }
+        .form-group{
+            margin: 24px auto;
+            margin-left: 7px;
+        }
+        .button{
+            margin-left: 85px;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <h1 align="center">Student Registration Form</h1>
+    <hr>
+    <form action="" method="post">
+      
+      <div class="form-group">
+      <label for="fullname">Full Name:</label>
+      <input id="fullname" type="text" 
+        placeholder="Enter your full name"
+        required
+        autocomplete="name">
+      </div>
+
+      <div class="form-group">
+      <label for="email">Email:</label>
+      <input id="email" type="email" 
+        placeholder="Enter your email"
+        required
+        autocomplete="email">
+      </div>
+
+      <div class="form-group">
+      <label for="password">Password: </label>
+      <input id="password" type="text" 
+        placeholder="Enter your password"
+        required
+        autocomplete="password">
+      </div>
+
+      <div class="form-group">
+       <label>Gender:</label>
+       <input type="radio" id="male" name="gender" value="male" required>
+       <label for="male">Male</label>
+       <input type="radio" id="female" name="gender" value="female" required>
+       <label for="female">Female</label>
+       <input type="radio" id="other" name="gender" value="other" required>
+       <label for="other">Other</label>
+      </div>
+
+      <div class="form-group">
+        <label>Course: </label>
+        <select required>
+          <option value="">--Select Course--</option>
+          <option value="btech">B-Tech</option>
+          <option value="mtech">M.Tech</option>
+          <option value="bca">BCA</option>
+          <option value="MCA">MCA</option>
+          <option value="bba">BBA</option>
+          <option value="mba">MBA</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="contactno">Contact No:</label>
+        <input type="tel" id="contactno" name="contact" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" rows="3"></textarea>
+      </div>
+
+      <div class="button">
+         <button type="submit">Register</button>
+         <button type="reset">Clear</button>
+      </div>
+    </form>
+
+    <hr>
+
+    <footer>
+    <p align="center">&copy; 2025 Student Registration Portal</p>
+    </footer>
+  </body>
+</html>
