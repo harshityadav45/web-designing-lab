@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    margin: 10px auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    float: left;
+    width: 191px;
+    text-align: center;
+    background-color: black;
+
+    margin-left: 2px;
+
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.navbar ul li ul li {
+    display: none;
+}
+
+.navbar ul li:hover ul li {
+    display: block;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li ul {
+    position: absolute;
+
+}
+
+.navbar ul li:hover ul {
+    display: block;
+}

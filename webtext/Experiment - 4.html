@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hotal Room Booling Form</title>
+        <style>
+            .form-container{
+                border: 2px solid black;
+                display: inline-block;
+                padding: 15px;
+                margin-left: 30%;
+            }
+            .form-group{
+                
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class="form-container">
+            <h1>Hotal Room Booking Form</h1>
+
+            <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname">
+            </div>
+
+            <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" placeholder="dd-mm-yyyy">
+            </div>
+
+            <div class="form-group">
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" placeholder="dd-mm-yyyy">
+            </div>
+
+            <div class="form-group">
+            <label for="roomtyple">Room Type</label>
+            <select id="roomtyple">
+                <option value=" " disabled> <-- room type --> </option>
+                <option value="single">Single</option>
+                <option value="dual">Dual</option>
+                <option value="three"> Three</option>
+            </select>
+            </div>      
+            
+            <div class="form-group">
+            <label for="guest">Number of Guest</label>
+            <input type="number" id="guest" name="guest" min="1">
+            </div>
+
+            <div>
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" name="requests" rows="3"></textarea>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Book Now">
+                <input type="reset"  value="Reset Form"
+            </div>
+        </form>
+    </div>
+    </body>
+</html>
