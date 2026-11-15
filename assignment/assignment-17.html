@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-17</title>
+
+    <style>
+        .box {
+            border: 2px solid rgb(0, 217, 72);
+        }
+
+        #margin {
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input{
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div id="margin">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input type="text" name="fullname" placeholder="Full Name" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="mail" placeholder="you@college.edu"required>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" name="mobile" placeholder="10-digit mobile" pattern="[0-9]{10}" title="Enter exactly 10 disit" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="Min 6 characters" pattern="[0-9]{6}" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" name="age" placeholder="Age (17-30)" min="17" max="30" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-18</title>
+
+    <style>
+        .box {
+            border: 2px solid rgb(0, 217, 72);
+            width: 900px;
+            margin-left: 20%;
+            margin-right: 30%;
+        }
+
+        #margin {
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .main {
+            margin-left: 5%;
+            margin-right: 7%;
+        }
+
+        .form-group label {
+            display: block;
+        }
+
+        .statement {
+            margin-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div id="margin">
+            <header>
+                <h1 style="width: 800px; height: 70px; background-color: rgb(0, 0, 78); color: white;" align="center">
+                    ABC college Admission 2026</h1>
+            </header>
+
+            <main class="main">
+                <h2>Courses and Fees</h2>
+                <table border="2px solid black" style="border-collapse: collapse;">
+                    <caption>Available Courses</caption>
+                    <thead style="background-color: aqua;">
+                        <tr>
+                            <th width="400px">Course</th>
+                            <th width="200px ">Seats</th>
+                            <th width="200px">Fees</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>B.Tech CSE</td>
+                            <td>120</td>
+                            <td>₹90,000</td>
+                        </tr>
+                        <tr>
+                            <td>BCA</td>
+                            <td>60</td>
+                            <td>₹45,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <fieldset>
+                    <legend>
+                        Application Form
+                    </legend>
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="mail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Course: </label>
+                        <select>
+                            <option value=" " disabled selected> <-- course --></option>
+                            <option value="cse">B.Tech CSE</option>
+                            <option value="ece">ECE</option>
+                            <option value="eee">EEE</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="statement">Statement</label>
+                        <textarea id="statement" width="300px" height="50px"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit">Apply</button>
+                    </div>
+                </fieldset>
+            </main>
+            <footer>
+                <h3 style="width: 800px; height: 40px; background-color: rgb(0, 0, 78); color: white;" align="center">
+                    &copy; 2026 ABC College</h3>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

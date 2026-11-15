@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-13</title>
+
+    <style>
+        .box {
+            border: 2px solid rgb(0, 217, 72);
+        }
+
+        #margin {
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+
+        }
+
+        table,
+        th,
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div id="margin">
+            <table border="2px solid black" cellpadding="5">
+                <caption>Weekly Timetable</caption>
+                <tr>
+                    <th>Day</th>
+                    <th>9-10</th>
+                    <th>10-11</th>
+                    <th>11-12</th>
+                </tr>
+                <tr>
+                    <td>Mon</td>
+                    <td>Math</td>
+                    <td>HTML</td>
+                    <td rowspan="2">Web Lab</td>
+                </tr>
+
+                <tr>
+                    <td>Tue</td>
+                    <td>DBMS</td>
+                    <td>OS</td>
+                </tr>
+                <tr>
+                    <td>Wed</td>
+                    <td colspan="3">Seminar</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

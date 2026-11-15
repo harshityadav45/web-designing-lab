@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-15</title>
+
+    <style>
+        .box {
+            border: 2px solid rgb(0, 217, 72);
+        }
+
+        #margin {
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .form-group{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div id="margin">
+            <form>
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input id="name" type="text" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input id="email" type="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="possword">Password: </label>
+                        <input id="Password" type="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <input type="radio" id="mail" name="gender" value="male">
+                        <label for="mail">Male</label>
+                        <input type="radio" id="femail" name="gender" value="female">
+                        <label for="femail">Female</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Hobbies: </label>
+                        <input type="checkbox" id="reading" name="reading">
+                        <label for="reading">Reading</label>
+                        <input type="checkbox" id="coding" name="coding">
+                        <label for="coding">Coding</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-of-birth">DOB: </label>
+                        <input id="date-of-birth" type="date" name="date-of-birth">
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
